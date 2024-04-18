@@ -25,7 +25,7 @@ namespace Library.Tests
         public void TestIncorrectDate()
         {
             const string myDate = "2/04/2002";
-            const string dateExpected = "2002-04-2";
+            const string dateExpected = "La longitud de la fecha tiene que tener 10 caracteres";
 
             string newFormatDate = DateFormatter.ChangeFormat(myDate);
 
@@ -37,7 +37,7 @@ namespace Library.Tests
         public void TestBlankDate()
         {
             const string myDate = "";
-            const string dateExpected = "";
+            const string dateExpected = "La fecha no puede ser vacía";
 
             string newFormatDate = DateFormatter.ChangeFormat(myDate);
 
